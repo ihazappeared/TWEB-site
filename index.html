@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+      <nav class="navbar">
+          <div class="container">
+              <div class="navbar-left">
+                <div class="logo">
+                  <img src="./assets/logo.svg">
+                </div>
+              </div>
+              <div class="navbar-center">
+                <a href="#home">Who we are</a>
+                <a href="#about">What we do</a>
+                <a href="#services">Where we work</a>
+                <a href="#contact">How to help</a>
+              </div>
+              <div class="navbar-right">
+                <div class="navbar-buttons">
+                  <button>Donate</button>
+                </div>
+              </div>
+              <div class="navbar-mobile">
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">&#9776;</button>
+              </div>
+          </div>
+          <div class="mobile-menu">
+            <a href="#home">Who we are</a>
+            <a href="#about">What we do</a>
+            <a href="#services">Where we work</a>
+            <a href="#contact">How to help</a>
+          </div>
+      </nav>
+      <script src="./script.js"></script>
+  </body>
+</html>
