@@ -168,6 +168,102 @@ li {
   display: none;
 }
 
+.content .constrain {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75rem;
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.content .c1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  margin-left: calc(50% - 50vw);
+  position: relative;
+  text-align: right;
+  width: 100vw;
+}
+
+.content .c1 img {
+  max-height: 607px;
+  max-width: 912px;
+  object-fit: cover;
+  order: 1;
+  width: 61vw;
+}
+
+.content .c1-constrain {
+  background-color: #FFF8EB;
+}
+
+/* esta parte ta toda fodida */
+
+@media (min-width: 48em) {
+  .c1 .c1-constrain {
+    align-self:flex-start;
+    bottom: -51px;
+    display: block;
+    margin: 0;
+    padding: 5vw;
+    position: absolute;
+    transform: none;
+    width: 47vw;
+    z-index: 1
+  }
+}
+
+@media (min-width: 80em) {
+  .c1 .c1-constrain {
+    align-self:center;
+        bottom: auto;
+        min-height: 358px;
+        min-width: 378px;
+        order: 0;
+        padding: 6vw;
+        position: static;
+        transform: translateX(32px)
+  }
+}
+
+@media (min-width: 100em) {
+  .c1 .c1-constrain {
+    padding: 88px;
+  }
+}
+
+@media (min-width: 89.375em) {
+  .c1 .c1-constrain {
+    padding-left: 1.5vw;
+  }
+}
+
+.content .c1-title {
+  font-size: clamp(1.25rem,1.0322580645rem + 0.9677419355vw,2rem);
+  font-family: "TiemposText",serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.content .c1 button {
+  background-color: #c8102e;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: "Futura", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
 .footer {
   background-color: #f5f5f5;
   padding: 40px 25%;
