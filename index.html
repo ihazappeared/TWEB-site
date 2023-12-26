@@ -7,35 +7,113 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-      <nav class="navbar">
-          <div class="container">
-              <div class="navbar-left">
-                <div class="logo">
-                  <img src="./assets/logo.svg">
-                </div>
-              </div>
-              <div class="navbar-center">
-                <a href="#home">Who we are</a>
-                <a href="#about">What we do</a>
-                <a href="#services">Where we work</a>
-                <a href="#contact">How to help</a>
-              </div>
-              <div class="navbar-right">
-                <div class="navbar-buttons">
-                  <button>Donate</button>
-                </div>
-              </div>
-              <div class="navbar-mobile">
-                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">&#9776;</button>
-              </div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-left">
+          <div class="logo">
+          <img src="./assets/logo.svg" alt="Logo">
           </div>
-          <div class="mobile-menu">
+          <div class="navbar-buttons">
+          <button>Donate</button>
+          </div>
+        </div>
+        <div class="navbar-center">
+          <div class="navbar-item">
             <a href="#home">Who we are</a>
-            <a href="#about">What we do</a>
-            <a href="#services">Where we work</a>
-            <a href="#contact">How to help</a>
+            <ul class="sub-menu">
+              <li><a>Our Leadership</a></li>
+              <li><a>Careers</a></li>
+              <li><a>Research and resources</a></li>
+              <li><a>Blog</a></li>
+            </ul>
           </div>
-      </nav>
-      <script src="./script.js"></script>
+          <div class="navbar-item">
+            <a href="#about">What we do</a>
+            <ul class="sub-menu">
+              <li><a>Emergency response</a></li>
+              <li><a>Youth</a></li>
+              <li><a>Climate</a></li>
+              <li><a>Technology</a></li>
+              <li><a>Ventures</a></li>
+            </ul>
+          </div>
+          <div class="navbar-item">
+            <a href="#services">Where we work</a>
+          </div>
+          <div class="navbar-item">
+            <a href="#contact">How to help</a>
+            <ul class="sub-menu">
+              <li><a>Make a donation</a></li>
+              <li><a>Make a monthly gift</a></li>
+              <li><a>Take a stand</a></li>
+              <li><a>Partner with us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-right">
+          <div class="navbar-buttons">
+            <a class="search"></a>
+            <button>Donate</button>
+          </div>
+        </div>
+        <div class="navbar-mobile">
+          <button class="mobile-menu-btn" onclick="toggleMobileMenu()">&#9776;</button>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <a href="#home">Who we are</a>
+        <a href="#about">What we do</a>
+        <a href="#services">Where we work</a>
+        <a href="#contact">How to help</a>
+      </div>
+    </nav>
+    <div class="content">
+    </div>
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <a>Who we are</a>
+          <div class="links">
+            <a>Our Leadership</a><br>
+            <a>Careers</a><br>
+            <a>Financials</a><br>
+            <a>Diversity, equity, and inclusion</a><br>
+            <a>Ethics and policies</a><br>
+            <a>Press</a><br>
+            <a>Contact us</a><br>
+          </div>
+        </div>
+        <div class="footer-column">
+          <a>How to help</a>
+          <div class="links">
+            <a>Make a donation</a><br>
+            <a>Give monthly</a><br>
+            <a>Volunteer</a><br>
+            <a>Fundraise</a><br>
+            <a>Partner with us</a><br>
+            <a>Include us in your will</a><br>
+          </div>
+        </div>
+        <div class="footer-column">
+          <a>JOIN OUR NEWSLETTER</a>
+          <form action="#" method="post">
+            <input type="email" name="email" placeholder="Email" required>
+            <p>
+              Get updates about our work and discover how you can take action. Read our privacy statement for more information.
+            </p>
+            <button type="submit">Sign up <img src="./assets/arrow.svg" width="6px"> </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <a href="https://www.facebook.com/mercycorpsuk"> facebook</a>
+          <a href="https://www.facebook.com/mercycorpsuk"> facebook</a>
+          <a href="https://www.facebook.com/mercycorpsuk"> facebook</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
+
