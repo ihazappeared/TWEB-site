@@ -16,6 +16,7 @@ a,button {
 
 .navbar {
   position: fixed;
+  background-color: white;
   top: 0;
   transition: top 500ms ease;
   width: 100%;
@@ -25,7 +26,7 @@ a,button {
 }
 
 .content {
-  margin-top: 120px;
+  margin-top: 500px;
   height: 100%;
 }
 
@@ -242,8 +243,41 @@ li {
 .footer-column button:hover {
   background-color: #55B9D2;
 }
+
 .footer-column button img {
   margin-left: 5px;
+}
+
+.percentage {
+  display: flex;
+  align-items: center;
+}
+
+#percentagediv {
+  width: 150px;
+  margin-left: 25px;
+}
+
+#percentagediv a{
+  font-size: .72rem;
+  text-transform: uppercase;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #666;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #c8102e;
 }
 
 
@@ -255,6 +289,7 @@ li {
     width: 100%;
     margin-left: 15px;
   }
+  
 
   .navbar-left .navbar-buttons {
     display: block;
@@ -281,5 +316,13 @@ li {
     display: block;
     margin-left: 15px;
     margin-right: 15px;
+  }
+
+  .footer {
+    padding: 40px 15px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
   }
 }

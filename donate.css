@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+
+a,p,h1,h2,h3,h4 {
+    font-family:"TiemposText",serif;
+    color: #0f1d2b;
+}
+
+h1 {
+    font-family: "TiemposHeadline",serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.content {
+    padding-top: 2.5rem;
+    width: 100%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75rem;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.logo {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem
+}
+
+.left-page {
+    margin: 0 1.5rem 0 0;
+    max-width: 43.125rem;
+}
+
+#caption-image {
+    width: 600px;
+}
+
+.caption {
+    width: 60%;
+    font-family: "Arial",sans-serif;
+    font-size: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.text {
+    margin-bottom: 50px;
+}
+
+.text p {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.5;
+    word-wrap: break-word;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.percentage {
+    display: flex;
+    align-items: center;
+}
+
+#percentagediv {
+    width: 150px;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+#percentagediv a{
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: "Futura",sans-serif;
+
+}
+
+#percentagediv p {
+    font-size: 12px;
+    font-family: "Futura",sans-serif;
+    
+}
+
+.efficiency-logos {
+    display: flex;
+    align-items: center;
+}
+
+.efficiency-logos a {
+    margin-right: 15px;
+}
+
+.efficiency-statement {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    word-wrap: break-word;
+    width: 50%;
+    margin-top: 25px;
+    
+}
+
+.efficiency-statement p {
+    font-family: "Futura",sans-serif;
+}
+
+hr {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
