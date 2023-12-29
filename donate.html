@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Give now to help change lives | Mercy Corps</title>
     <link rel="stylesheet" href="./donate.css">
+    <link rel="icon" href="assets/icon.ico">
 </head>
 <body>
+    <div id="popup-container">
+        <div id="popup">
+            <p id="popup-content">Default content</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
     <div class="content">
         <div class="container">
             <div class="logo">
@@ -65,12 +72,112 @@
                         </p>
                     </div>
                 </section>
-                <section>
+                <section class="right-page">
+                    <h1>1. Your Donation</h1>
+                    <form id="donationForm">
+                        <h2>Choose your Donation type:</h2>
+                        <div class="radioinputs">
+                            <input class="radioinput" type="radio" name="donationType" id="donationUnique" value="unique" onchange="handleRadioChange()" required checked>
+                            <label for="donationUnique">Unique</label>
+                            
+                            <input class="radioinput"  type="radio" name="donationType" id="donationMonthly" onchange="handleRadioChange()" value="monthly" required>
+                            <label for="donationMonthly">Monthly</label>
+                        </div>
 
+                        <h2>Choose your amount:</h2>
+                        <div class="radioinputs">
+                            <input class="radioinput" type="radio" name="donationAmount" id="amount20" value="20" required>
+                            <label for="amount20">€20</label>
+                            
+                            <input class="radioinput"  type="radio" name="donationAmount" id="amount40" value="40" required>
+                            <label for="amount40">€40</label>
+                    
+                            <input class="radioinput" type="radio" name="donationAmount" id="amount80" value="80" required>
+                            <label for="amount80">€80</label>
+
+                            <input class="radioinput hidden" type="radio" name="donationAmount" value="0" required checked>
+                        </div>
+                        <div class="othervalue">
+                            <label>Other:</label>
+                            <input type="number" id="donationAmountCustom" >
+                        </div>
+                        <hr>
+                        <h1>
+                            2. Your Information
+                        </h1>
+                        <label>Email:</label>
+                        <input type="email" id="email" required>
+                        <label>Personal/Company:</label>
+                        <select id="donorType" required>
+                            <option value="particular">Personal</option>
+                            <option value="empresa">Company</option>
+                        </select>
+                        <div id="particularFields">
+                            <label>Title:</label>
+                            <select id="title" required>
+                                <option value=""></option>
+                                <option value="dr">Dr</option>
+                                <option value="dr">Miss</option>
+                                <option value="dr">Mr</option>
+                                <option value="dr">Mrs</option>
+                                <option value="dr">Ms</option>
+                                <option value="dr">Dr</option>
+                            </select>
+                            <label>Name:</label>
+                            <input type="text" name="nomeParticular" id="nomeParticular" required>
+
+                            <label>Last Name:</label>
+                            <input type="text" name="apelidoParticular" id="apelidoParticular" required>
+
+                            <label>Phone Number:</label>
+                            <input type="tel" name="phone" id="telemovel" required>
+                        </div>
+                        <div id="empresaFields">
+                            <label>Name:</label>
+                            <input type="text" name="nomeEmpresa" id="nomeEmpresa" required>
+                    
+                            <label>Phone Number:</label>
+                            <input type="tel" name="telemovelEmpresa" id="telemovelEmpresa" required>
+                        </div>
+                        <label>NIF:</label>
+                        <input type="text" name="nif" id="nif" required>
+                        <div id="address">
+                            <label>Address:</label>
+                            <input type="text" name="address" id="addressinput" required>
+                        </div>
+                        <label>Donation destination:</label>
+                        <select id="destinationCountries" required>
+                            <option value=""></option>
+                            <option value="country1">Liberia</option>
+                            <option value="country2">Chad</option>
+                            <option value="country3">Malawi</option>
+                            <option value="country4">Niger</option>
+                            <option value="country5">Mozambique</option>
+                            <option value="country6">Somalia</option>
+                        </select>
+
+                        
+                        <h1>
+                            3. Payment Information
+                        </h1>
+
+                        <label>Meios de Pagamento:</label>
+                        <select id="paymentMethod" required>
+                            <option value="creditCard">Cartão de Crédito</option>
+                            <option value="paypal">Paypal</option>
+                            <option value="multibanco">Multibanco</option>
+                            <option value="mbway">MbWay</option>
+                        </select>
+                        <div id="debitDirectFields">
+                            <label>IBAN:</label>
+                            <input type="text" id="iban" required>
+                        </div>
+                        <button type="submit">Give Now</button>
+                    </form>
                 </section>
             </article>
-
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
