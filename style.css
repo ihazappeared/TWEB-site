@@ -845,6 +845,10 @@ p.caption {
     
   }
 
+  .about {
+    width: 80%;
+  }
+
   .about-container {
     flex-direction: column;
     align-items: center;
@@ -852,7 +856,6 @@ p.caption {
 
   .about-text {
     margin-left: 0px;
-    width: 80%;
   }
 
   .banner {
@@ -893,7 +896,8 @@ p.caption {
   }
 
   .content1-info {
-    transform: none;
+    order: 1;
+    transform: translateY(-42px);
   }
 
   .stories-container {

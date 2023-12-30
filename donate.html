@@ -161,12 +161,13 @@
                             3. Payment Information
                         </h1>
 
-                        <label>Meios de Pagamento:</label>
+                        <label>Method of payment</label>
                         <select id="paymentMethod" required>
-                            <option value="creditCard">Cartão de Crédito</option>
-                            <option value="paypal">Paypal</option>
-                            <option value="multibanco">Multibanco</option>
-                            <option value="mbway">MbWay</option>
+                            <option id="creditCardOption" value="creditCard">Credit Card</option>
+                            <option id="paypalOption" value="paypal">Paypal</option>
+                            <option id="multibancoOption" value="multibanco">Multibanco</option>
+                            <option id="mbwayOption" value="mbway">MbWay</option>
+                            <option id="debitoOption" value="debito">Direct debit</option>
                         </select>
                         <div id="debitDirectFields">
                             <label>IBAN:</label>

@@ -40,6 +40,12 @@ function handleRadioChange() {
     var uniqueRadio = document.querySelector('input[name="donationType"][value="unique"]');
     var inputdiv = document.getElementById('address');
     var input = document.getElementById('addressinput');
+
+    var paypalOption = document.getElementById("paypalOption");
+    var multibancoOption = document.getElementById("multibancoOption");
+    var mbwayOption = document.getElementById("mbwayOption");
+    var debitoOption = document.getElementById("debitoOption");
+
     
     var monthlyRadio = document.querySelector('input[name="donationType"][value="monthly"]');
     input.disabled = true;
@@ -50,15 +56,26 @@ function handleRadioChange() {
         inputdiv.classList.add('hidden');
 
         isMonthly = 0;
+
+        debitoOption.disabled = true;
+        paypalOption.disabled = false;
+        multibancoOption.disabled = false;
+        mbwayOption.disabled = false;
     } else if (monthlyRadio.checked) {
         input.disabled = false;
         inputdiv.classList.remove('hidden');
         isMonthly = 1;
+
+        debitoOption.disabled = false;
+        paypalOption.disabled = true;
+        multibancoOption.disabled = true;
+        mbwayOption.disabled = true;
     }
 }
 
 
 document.getElementById('donorType').addEventListener('change', handleSelectChange);
+
 
 handleSelectChange();
 
