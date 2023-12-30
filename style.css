@@ -400,4 +400,8 @@ li {
   .footer-columns {
     flex-direction: column;
   }
+
+  .mobile-menu-btn {
+    margin-right: 15px;
+  }
 }

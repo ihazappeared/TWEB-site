@@ -112,7 +112,6 @@ document.getElementById("donationForm").addEventListener("submit", function (eve
                 openPopup(content);
             }
         }
-        
     }
 });
 
