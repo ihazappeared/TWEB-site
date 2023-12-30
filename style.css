@@ -884,4 +884,8 @@ p.caption {
   .about-text p {
     width: 100%;
   }
+
+  .content1-info {
+    translate: none;
+  }
 }
