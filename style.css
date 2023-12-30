@@ -460,6 +460,9 @@ p.caption {
 .grid-item {
   margin-bottom: 8rem;
   vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .grid-item img, .grid-item video {
@@ -886,6 +889,12 @@ p.caption {
   }
 
   .content1-info {
-    translate: none;
+    transform: none;
   }
+
+  .stories-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .stories-container p, h1 {}
 }
