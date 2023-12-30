@@ -393,13 +393,15 @@ p.caption {
   justify-content: space-between;
 }
 
-.stats-container div:first-child {
+.stats-div {
   padding: 0 2rem 2rem 2rem;
   width: 25%;
 }
 
+.stats-container
+
 .stat-info {
-  align-items: center;
+  align-items: baseline;
   display: inline-flex;
   overflow: hidden;
   width: auto;
@@ -418,6 +420,7 @@ p.caption {
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5rem;
 }
 
 .about img {
@@ -432,7 +435,6 @@ p.caption {
 .about-container {
   display: flex;
   flex-direction: row;
-  margin-bottom: 5rem;
 }
 
 .about-text {
@@ -654,8 +656,6 @@ p.caption {
     width: 100%;
     margin-left: 15px;
   }
-  
-
   .navbar-left .navbar-buttons {
     display: block;
   }
@@ -685,6 +685,7 @@ p.caption {
 
   .content1 .main-image {
     width: 100%;
+    transform: none;
   }
 
   .footer {
@@ -721,14 +722,57 @@ p.caption {
   .news-left {
     flex-shrink: 0;
 
+    margin-bottom: 5rem;
+    width: auto;
     position: relative;
-    width: 100%;
     align-self: center;
     background-color: #ecfbfc;
     margin-left: 0px;
     padding-bottom: 6rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     padding-top: 6rem;
-}
+    
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    margin-left: 0px;
+    width: 80%;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner h1 {
+    width: 100%;
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .formatted-text {
+    width: 80%;
+  }
+
+  .about-container img{
+    width: 100%;
+  }
+
+  .content1-info {
+    width: 100%;
+  }
+
+  .stats-div {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .about-text p {
+    width: 100%;
+  }
 }
