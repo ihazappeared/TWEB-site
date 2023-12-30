@@ -215,6 +215,12 @@ hr {
   margin-right: auto;
 }
 
+.button-news button:hover {
+  background-color: #00bfee;
+  border-color: #00bfee;
+  color: #fff;
+}
+
 .navbar-center {
   position: relative;
 }
@@ -431,6 +437,88 @@ p.caption {
   font-size: 3rem;
 }
 
+.stories-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.stories-container .read {
+  padding: 10px;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.stories-container .read:hover {
+  color: #0f1d2b;  
+}
+
+.grid-item {
+  margin-bottom: 8rem;
+  vertical-align: middle;
+}
+
+.grid-item img, .grid-item video {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-item .date {
+  font-family: "Futura",sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: left;
+}
+
+.grid-item a {
+  display: block;
+  height: auto;
+}
+
+.grid-item h1 {
+  font-family: "TiemposText",serif;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  width: 100%;
+}
+
+.grid-item p {
+  font-family: "TiemposText",serif;
+  font-weight: 100;
+  font-size: 1.25rem;
+  width: 90%;
+}
+
+.grid-item button {
+  background-color: #18a1c3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.74rem 1rem;
+  font-weight: 600;
+  line-height: 1.45;
+  font-size: 20px;
+}
+
+.grid-item button:hover {
+  background-color: #00bfee;
+  border-color: #00bfee;
+  color: #fff;
+}
+
+#grid-button{
+  text-align: center;
+}
+
 .about {
   max-width: 75rem;
   margin-left: auto;
@@ -513,6 +601,12 @@ p.caption {
   font-weight: 700;
   line-height: 1.45;
   font-size: 20px;
+}
+
+.banner button:hover {
+  background-color: #00bfee;
+  border-color: #00bfee;
+  color: #fff;
 }
 
 .banner img {
