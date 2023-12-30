@@ -416,6 +416,21 @@ p.caption {
   font-size: 3.5rem;
 }
 
+.stories {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stories-title {
+  text-align: center;
+  font-family: "TiemposText",serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
 .about {
   max-width: 75rem;
   margin-left: auto;
