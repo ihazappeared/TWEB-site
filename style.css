@@ -355,6 +355,57 @@ p.caption {
   font-size: 3.5rem;
 }
 
+.about {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about img {
+  height: auto;
+  width: 30rem;
+}
+
+.about .arrow {
+  width: 24px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+.about-text {
+  margin-left: 8.5rem;
+  align-content: center;
+  align-self: center;
+}
+
+.about-text h2 {
+  font-family: "TiemposText",serif;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.about-text p {
+  font-weight: 400;
+  font-family: "TiemposText",serif;
+  width: 28rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.about-text a {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
 .footer {
   background-color: #f5f5f5;
   padding: 40px 25%;
@@ -522,5 +573,12 @@ p.caption {
   .content1 img {
     max-width: 90.6vw;
     vertical-align: middle;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
   }
 }
