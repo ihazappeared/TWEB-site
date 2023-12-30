@@ -6,7 +6,7 @@ body {
   line-height: 1.7;
   color: #0f1d2b;
   width: 100%;
-  overflow-x: hidden; /* This prevents horizontal scrolling on smaller screens */
+  overflow-x: hidden;
 }
 
 a,button {
@@ -33,8 +33,6 @@ a,button {
   height: 100%;
   
 }
-
-
 
 .latest-news {
   max-width: 75rem;
@@ -759,7 +757,7 @@ p.caption {
   color: #c8102e;
 }
 
-
+/* MEDIA QUERIES */
 @media only screen and (max-width: 768px) {
   .navbar-left {
     display: flex;
@@ -904,6 +902,4 @@ p.caption {
     margin-left:auto;
     margin-right:auto;
   }
-
-  .stories-container p, h1 {}
 }
